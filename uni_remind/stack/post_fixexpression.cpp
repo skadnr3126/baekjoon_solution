@@ -12,14 +12,14 @@ void print_stack(std::stack<double> &my_stack) {
 	
 }
 int main() {
-	int n; //ÇÇ¿¬ÀÜ»çÀÇ°³¼ö a~z±îÁö
-	std::string expreesion; //ÈÄÀ§Ç¥±â¹ıÀ¸·Î ³ªÅ¸³½ ½Ä
+	int n; //í”¼ì—°ì”ì‚¬ì˜ê°œìˆ˜ a~zê¹Œì§€
+	std::string expreesion; //í›„ìœ„í‘œê¸°ë²•ìœ¼ë¡œ ë‚˜íƒ€ë‚¸ ì‹
 
 	std::cin >> n;
 	std::cin >> expreesion;
 
 	std::stack<double> my_stack;
-	int map_arr[26]; //°¢ ¾ËÆÄºª¿¡ ´ëÀÀµÇ´Â °ª
+	int map_arr[26]; //ê° ì•ŒíŒŒë²³ì— ëŒ€ì‘ë˜ëŠ” ê°’
 	for (int i = 0; i < n; ++i) {
 		int temp;
 		std::cin >> temp;
@@ -43,7 +43,6 @@ int main() {
 			double b = my_stack.top();
 			my_stack.pop();
 			double a = my_stack.top();
-			a = my_stack.top();
 			my_stack.pop();
 			switch (ch) {
 			case '*':
